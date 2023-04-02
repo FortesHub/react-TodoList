@@ -1,0 +1,10 @@
+.header {
+  font-size: 30px;
+  color: sienna;
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+.header img {
+  margin-right: 20px;
+}

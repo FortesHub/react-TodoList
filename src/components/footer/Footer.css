@@ -1,0 +1,10 @@
+footer p{
+    margin: auto;
+    text-align: center;
+    color: sienna;       
+}
+footer{
+    background-color: black;
+    margin-top: 166px;
+    padding: 5px;
+}

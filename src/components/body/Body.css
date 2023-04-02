@@ -1,0 +1,29 @@
+.card {
+  background-color: bisque;
+  width: 40rem;
+  height: 25rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* margin-bottom: 40px; */
+  box-shadow: 5px 5px 2.5px darkgoldenrod;
+}
+img.card-img {
+  width: 200px;
+  height: 120px;
+  margin-left: 230px;
+}
+p.card-text {
+  text-align: justify;
+  width: 600px;
+  height: 120px;
+}
+button.body-button {
+  margin-top: 80px;
+  background-color: black;
+  color: sienna;
+  font-weight: bold;
+  border: none !important;
+}
+button.body-button:hover {
+  background-color: darkgray;
+}
