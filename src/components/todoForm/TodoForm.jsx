@@ -1,25 +1,33 @@
+import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form";
+import { useState } from "react"
+
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+
 import "./TodoForm.css";
-import Nav from "react-bootstrap/Nav";
 
 function TodoForm() {
+  const [text, setText] = useState("");
+
+  function onFormSubmit(){
+
+  }
+
+  function onInputChange(e){
+    setText(e.target.value);
+  }
   return (
     <div>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">Active</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-2">Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Disabled
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <Header />
+      <Card>
+        <div className="body-card">
+          <Form className="card-form" onSubmit={onFormSubmit}>
+            <input className="card-input" placeholder="Enter new todo.." onChange={onInputChange}/>
+          </Form>
+        </div>
+      </Card>
+      <Footer />
     </div>
   );
 }
