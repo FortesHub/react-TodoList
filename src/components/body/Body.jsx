@@ -4,13 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 import "./Body.css";
 
-
 function Body() {
   let navigate = useNavigate();
 
-  function handleClick(){
+  function handleClick() {
     navigate("/todo");
-  } 
+  }
   return (
     <Card>
       <div className="body-card">
@@ -28,7 +27,9 @@ function Body() {
             completed, so they can keep track of progress and focus on
             completing all the tasks on the list.
           </Card.Text>
-          <Button className="body-button" onClick={handleClick}>TODO LIST</Button>
+          <Button className="body-button" onClick={handleClick}>
+            TODO LIST
+          </Button>
         </Card.Body>
       </div>
     </Card>
