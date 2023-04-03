@@ -8,7 +8,7 @@ function Header() {
   return (
     <Navbar bg="dark">
       <Container>
-        <NavbarBrand href="#home">
+        <NavbarBrand href="/home">
         <div className="header">
             <img
               alt="todo"
