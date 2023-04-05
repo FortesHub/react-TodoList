@@ -28,7 +28,7 @@ function Body() {
             completing all the tasks on the list.
           </Card.Text>
           <Button className="body-button" onClick={handleClick}>
-            TODO LIST
+            Try it...
           </Button>
         </Card.Body>
       </div>
