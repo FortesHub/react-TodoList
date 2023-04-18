@@ -4,7 +4,10 @@ footer p{
     color: sienna;       
 }
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     background-color: black;
-    margin-top: 166px;
-    padding: 5px;
+    padding: 10px;
 }

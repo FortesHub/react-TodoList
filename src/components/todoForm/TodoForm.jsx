@@ -1,13 +1,12 @@
-import Card from "react-bootstrap/Card";
+import CardBody from "../CardBody/CardBody";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
-import  addNewTodo  from "../../redux/actions"
+import { addNewTodo } from "../../redux/actions";
 import { useDispatch } from "react-redux";
 
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import TodoList from "../todoList/TodoList";
-// import { AddNewTodo }  from "../redux/actions"
+import TodoList from "../todo/TodoList";
 
 import "./TodoForm.css";
 
@@ -18,10 +17,7 @@ function TodoForm() {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-
-  
     dispatch(addNewTodo(text));
-
     setText('');
   };
 
@@ -31,8 +27,7 @@ function TodoForm() {
   return (
     <div>
       <Header />
-      <Card>
-        <div className="body-card">
+     <CardBody>
           <Form className="card-form" onSubmit={onFormSubmit}>
             <input
               className="card-input"
@@ -41,12 +36,10 @@ function TodoForm() {
               value={text}
             />
           </Form>
-          <TodoList/>
-        </div>
-      </Card>
+          <TodoList />
+      </CardBody>
       <Footer />
     </div>
   );
 }
-
 export default TodoForm;

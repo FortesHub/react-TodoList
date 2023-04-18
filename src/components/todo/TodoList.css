@@ -1,0 +1,57 @@
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.button.clear {
+  margin-left: 70px;
+  color: #fff;
+  background-color: #ee1630;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+}
+
+.tabs {
+  margin-left: 130px;
+  padding-bottom: 10px;
+}
+
+#buttonPage {
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+  font-size: 15px;
+  font-weight: 650;
+  background-color: sienna;
+  color: Black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px darkgoldenrod;
+  text-align: center;
+  cursor: pointer;
+}
+
+#buttonPage:hover {
+  background-color: saddlebrown;
+}
+
+#buttonPage.active {
+  background-color: saddlebrown;
+  box-shadow: 0 2px darkgoldenrod;
+  transform: translateY(4px);
+}
+
+.buttonsPage{
+  margin-left: 280px;
+}
