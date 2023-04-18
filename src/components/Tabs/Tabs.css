@@ -22,3 +22,13 @@
     box-shadow: 0 2px darkgoldenrod;
     transform: translateY(4px);
 }
+
+@media screen and (max-width: 500px) {
+    .buttonTabs{
+        margin: 0 5px;
+        height: 30px;
+        width: 80px;
+        font-size: 15px;
+
+    }
+  }

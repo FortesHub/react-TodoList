@@ -28,9 +28,14 @@ function TodoList() {
     const todosToDisplay = todos.slice(indexOfFirstTodo, indexOfLastTodo);
 
     for (let i = 1; i <= totalPages; i++) {
-      const buttonClasses = i === currentPage ? 'active' : '';
+      const buttonClasses = i === currentPage ? "active" : "";
       pageButtons.push(
-        <button id="buttonPage" key={i} className={buttonClasses} onClick={() => setCurrentPage(i)}>
+        <button
+          id="buttonPage"
+          key={i}
+          className={buttonClasses}
+          onClick={() => setCurrentPage(i)}
+        >
           {i}
         </button>
       );
@@ -63,16 +68,15 @@ function TodoList() {
           </button>
         ) : null}
       </div>
-      <ul>
-        {getTodos().map((todo) => (
-          <Todo key={todo._id} todo={todo} />
-        ))}
-      </ul>
+      <div className="taskTodo">
+        <ul>
+          {getTodos().map((todo) => (
+            <Todo key={todo._id} todo={todo} />
+          ))}
+        </ul>
+      </div>
 
-<div className="buttonsPage">
-  {pageButtons}
-</div>
-      
+      <div className="buttonsPage">{pageButtons}</div>
     </article>
   );
 }

@@ -55,3 +55,67 @@ article {
 .buttonsPage{
   margin-left: 280px;
 }
+
+@media screen and (max-width: 500px) {
+  .tabs {
+    margin-left: 80px;
+  }
+
+  .buttonsPage{
+    margin-left: 180px;
+  }
+
+  .taskTodo{
+    margin-right: 10px ;
+    margin-left: -10px;
+  }
+
+  .button.clear{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    margin-left: 235px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tabs {
+    margin-left: 30px;
+  }
+
+  .buttonsPage{
+    margin-left: 140px;
+  }
+
+  .button.clear{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    margin-left: 235px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tabs {
+    margin-left: 10px;
+  }
+
+  .buttonsPage{
+    margin-left: 120px;
+  }
+
+  .taskTodo{
+    margin-right: 10px ;
+    margin-left: -10px;
+  }
+
+  .button.clear{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    margin-left: 235px;
+    margin-top: 20px;
+  }
+}

@@ -8,3 +8,9 @@
   outline: none;
   border-bottom: 2px solid gray;
 }
+
+@media screen and  (max-width: 500px) {
+  .card-input{
+    margin: 15px;
+  } 
+}

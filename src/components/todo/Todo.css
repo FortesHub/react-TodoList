@@ -32,3 +32,24 @@
   float: right;
   margin-right: 5px;
 }
+
+@media screen and (max-width: 500px) {
+  .task span {
+  font-size: 12px;
+  }
+
+  .editTodo{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .task span {
+  font-size: 9px;
+  }
+
+  .editTodo{
+    font-size: 9px;
+  }
+
+}
