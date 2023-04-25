@@ -4,6 +4,7 @@
  */
 
 module.exports = {
+
   transform: {
     "^.+\\.jsx?$": "babel-jest"
   },
@@ -15,6 +16,10 @@ module.exports = {
   },
   snapshotSerializers: ["jest-serializer-html", "jest-image-snapshot-serializer"],
   setupFilesAfterEnv: ["jest-extended", "jest-image-snapshot/dist/extend-expect"],
+
+  // moduleNameMapper: {
+  //   '^axios$': require.resolve('axios'),
+  // },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 

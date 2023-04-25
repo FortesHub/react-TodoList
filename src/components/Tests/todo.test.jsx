@@ -1,11 +1,11 @@
+import React from "react";
 import { render, screen } from '@testing-library/react';
 import configStore from 'redux-mock-store';
 import Todo from '../todo/Todo';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
-// test('first test', () => {
-// expect(true).toBe(true);
-// })
+import '@testing-library/jest-dom';
+
 
 test('should render our component', () => {
     const initialState = { state: []};
