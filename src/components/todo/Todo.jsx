@@ -6,23 +6,24 @@ import { toggleTodo, updateTodo, deleteTodo } from "../../redux/actions";
 
 const Todo = ({ todo }) => {
   const [editing, setEditing] = useState(false);
-  const [text, setText] = useState(todo.data);
+  const [text, setText] = useState(todo?.data);
   const onFormSubmit = (e) => {
     e.preventDefault();
     setEditing((prevState) => !prevState);
-    dispatch(updateTodo(todo._id, text));
+    dispatch(updateTodo(todo?._id, text));
   };
   const dispatch = useDispatch();
   return (
     <li
       className="task"
-      onClick={() => dispatch(toggleTodo(todo._id))}
+      onClick={() => dispatch(toggleTodo(todo?._id))}
       style={{
-        textDecoration: todo.done ? "line-through 4px" : "",
-        color: todo.done ? "#ff0000" : "#000000",
+        textDecoration: todo?.done ? "line-through 4px" : "",
+        color: todo?.done ? "#ff0000" : "#000000",
       }}
+      data-testid="todo-test"
     >
-      <span style={{ display: editing ? "none" : "" }}>{todo.data}</span>
+      <span style={{ display: editing ? "none" : "" }}>{todo?.data}</span>
       <form
         style={{ display: editing ? "inline" : "none" }}
         onSubmit={onFormSubmit}
@@ -37,7 +38,7 @@ const Todo = ({ todo }) => {
       <button 
       className="icon"
        title="Delete"
-       onClick={() => dispatch(deleteTodo(todo._id))}
+       onClick={() => dispatch(deleteTodo(todo?._id))}
        >
         <i className="fa fa-trash"></i>
       </button>

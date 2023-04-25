@@ -23,7 +23,7 @@ function Body() {
   return (
     <CardBody>
       <div className="body-card">
-        <Image className="image" src="https://carolynnyoehome.files.wordpress.com/2021/09/haf02-7.gif" />
+        <Image className="image" src="/images/todo.gif" alt="imageTodo"/>
         <p className="text">{text}</p> 
           <Button className="body-button" onClick={handleClick}>
             Try it...
